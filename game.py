@@ -1,5 +1,5 @@
 #Hangman game
-#Designed by AnirudhCB@AllTheGoodNamesAreGone and AriaVikram@Caffetaria
+#Designed by AnirudhCB @AllTheGoodNamesAreGone and AriaVikram @Caffetaria
 #Credit for the hangman image goes to https://codereview.stackexchange.com/questions/95997/simple-game-of-hangman
 
 import random
