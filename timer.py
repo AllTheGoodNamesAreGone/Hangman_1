@@ -6,8 +6,8 @@ except ImportError:
     import tkinter as tk
 import time
 def count_down():
-    # start with 2 minutes --> 120 seconds
-    for t in range(120, -1, -1):
+    
+    for t in range(180, -1, -1):
         # format as 2 digit integers, fills with zero to the left
         # divmod() gives minutes, seconds
         sf = "{:02d}:{:02d}".format(*divmod(t, 60))
@@ -27,7 +27,8 @@ tk.Label(root, textvariable=time_str, font=label_font, bg='white',
 # create start and stop buttons
 # pack() positions the buttons below the label
 tk.Button(root, text='Count Start', command=count_down).pack()
+
 # stop simply exits root window
-tk.Button(root, text='Count Stop', command=root.destroy).pack()
+tk.Button(root, text='GAME OVER!!!', command=root.destroy).pack()
 # start the GUI event loop
 root.mainloop()
